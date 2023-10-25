@@ -9,6 +9,7 @@ import {setName} from "../state/PlayerSlice";
 import FindRoomsModal from "../components/modals/FindRoomsModal";
 import JoinRoomModal from "../components/modals/JoinRoomModal";
 import CreateRoomModal from "../components/modals/CreateRoomModal";
+import Modal from "../components/modals/Modal";
 
 const LandingPage = () => {
   const [selectedModal, setSelectedModal] = useState<
@@ -168,6 +169,9 @@ const LandingPage = () => {
               onClose={() => setSelectedModal(null)}
             />
           )}
+          <Modal visible>
+            <h1>hi</h1>
+          </Modal>
         </div>
         <Footer />
       </main>
